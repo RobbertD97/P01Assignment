@@ -62,7 +62,7 @@ public class TrainsTest {
         System.out.println(firstPassengerTrain);
     }
 
-    /*@Test
+    @Test
     public void checkPositionOfWagons() {
         makeTrains();
         int position = 1;
@@ -71,7 +71,7 @@ public class TrainsTest {
             position++;
         }
 
-    }*/
+    }
 
     /*@Test
     public void checkHookOneWagonOnTrainFront() {

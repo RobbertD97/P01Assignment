@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0cd2e84-2c87-47ac-a9dc-cfc85c6b852a" name="Default Changelist" comment="" />
+    <list default="true" id="c0cd2e84-2c87-47ac-a9dc-cfc85c6b852a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TrainsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TrainsTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +18,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -58,10 +65,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TrainsTest.checkNumberOfWagonsOnTrain">
+  <component name="RunManager" selected="JUnit.TrainsTest.checkPositionOfWagons">
     <configuration name="TrainLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.TrainLauncher" />
       <module name="TrainsSolution" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainsTest.checkNumberOfSeatsOnTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrainsSolution" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrainsTest" />
+      <option name="METHOD_NAME" value="checkNumberOfSeatsOnTrain" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,6 +88,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TrainsTest" />
       <option name="METHOD_NAME" value="checkNumberOfWagonsOnTrain" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainsTest.checkPositionOfWagons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrainsSolution" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrainsTest" />
+      <option name="METHOD_NAME" value="checkPositionOfWagons" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,6 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrainsTest.checkPositionOfWagons" />
+        <item itemvalue="JUnit.TrainsTest.checkNumberOfSeatsOnTrain" />
         <item itemvalue="JUnit.TrainsTest.checkNumberOfWagonsOnTrain" />
         <item itemvalue="Application.TrainLauncher" />
       </list>
@@ -154,6 +183,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
