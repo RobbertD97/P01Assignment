@@ -55,12 +55,12 @@ public class TrainsTest {
         System.out.println(firstPassengerTrain);
     }
 
-    /*@Test
+    @Test
     public void checkNumberOfSeatsOnTrain() {
         makeTrains();
         assertEquals( 730, firstPassengerTrain.getNumberOfSeats());
         System.out.println(firstPassengerTrain);
-    }*/
+    }
 
     /*@Test
     public void checkPositionOfWagons() {

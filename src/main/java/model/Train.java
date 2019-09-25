@@ -117,7 +117,7 @@ public class Train<Train> implements Iterable<Train> {
         if (this.isFreightTrain()) {
             return totalNumberOfSeats;
         } else {
-            while (currentWagon.hasNextWagon()) {
+            for (int i = 0; i < this.getNumberOfWagons(); i++) {
                 totalNumberOfSeats += ((PassengerWagon) currentWagon).getSeats();
                 currentWagon = currentWagon.getNextWagon();
             }
