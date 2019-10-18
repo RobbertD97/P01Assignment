@@ -80,15 +80,15 @@ public class Train<Train> implements Iterable<Train> {
             int position = 1;
             Wagon currentWagon = this.firstWagon;
 
-            while (currentWagon.hasNextWagon()) {
-                while (currentWagon.getWagonId() != wagonId) {
-                    currentWagon = currentWagon.getNextWagon();
-                    position++;
+            for (int i = 0; i < this.numberOfWagons; i++) {
+                if (currentWagon.getWagonId() == wagonId) {
+                    return position;
                 }
-                return position;
+                currentWagon = currentWagon.getNextWagon();
+                position++;
             }
+            return -1;
         }
-        return -1;
     }
 
     public Wagon getWagonOnPosition(int position) throws IndexOutOfBoundsException {

@@ -10,7 +10,7 @@ public class TrainLauncher {
 
     public static void main(String[] args) {
 
-        /* List<Wagon> wagonList = new ArrayList<>();
+        List<Wagon> wagonList = new ArrayList<>();
         wagonList.add(new PassengerWagon(3, 100));
         wagonList.add(new PassengerWagon(24, 100));
         wagonList.add(new PassengerWagon(17, 140));
@@ -48,6 +48,6 @@ public class TrainLauncher {
         Shunter.moveAllFromTrain(firstTrain, secondTrain, wagonList.get(2));
         System.out.println(firstTrain);
         System.out.println(secondTrain);
-*/
+
     }
 }
