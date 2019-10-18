@@ -116,6 +116,9 @@ public class Shunter {
         if (wagon.hasPreviousWagon()) {
             wagon.getPreviousWagon().setNextWagon(wagon.getNextWagon());
             wagon.getNextWagon().setPreviousWagon(wagon.getPreviousWagon());
+
+            wagon.setNextWagon(null);
+            wagon.setPreviousWagon(null);
         } else {
             train.setFirstWagon(wagon.getNextWagon());
         }

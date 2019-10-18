@@ -32,7 +32,7 @@ public class Train<Train> implements Iterable<Train> {
     }
 
     public Wagon getFirstWagon() {
-        return firstWagon;
+        return this.firstWagon;
     }
 
     public void setFirstWagon(Wagon firstWagon) {
@@ -43,7 +43,7 @@ public class Train<Train> implements Iterable<Train> {
        /*  when wagons are hooked to or detached from a train,
          the number of wagons of the train should be reset
          this method does the calculation */
-        if (hasNoWagons()) {
+        if (this.hasNoWagons()) {
             this.numberOfWagons = 0;
         } else {
             this.numberOfWagons = this.firstWagon.getNumberOfWagonsAttached() + 1;
@@ -52,22 +52,22 @@ public class Train<Train> implements Iterable<Train> {
     }
 
     public int getNumberOfWagons() {
-        return numberOfWagons;
+        return this.numberOfWagons;
     }
 
 
     /* three helper methods that are useful in other methods */
 
     public boolean hasNoWagons() {
-        return (firstWagon == null);
+        return (this.firstWagon == null);
     }
 
     public boolean isPassengerTrain() {
-        return firstWagon instanceof PassengerWagon;
+        return this.firstWagon instanceof PassengerWagon;
     }
 
     public boolean isFreightTrain() {
-        return firstWagon instanceof FreightWagon;
+        return this.firstWagon instanceof FreightWagon;
     }
 
 
@@ -144,25 +144,25 @@ public class Train<Train> implements Iterable<Train> {
     }
 
     public Locomotive getEngine() {
-        return engine;
+        return this.engine;
     }
 
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append(engine.toString());
+        result.append(this.engine.toString());
         Wagon next = this.getFirstWagon();
         while (next != null) {
             result.append(next.toString());
             next = next.getNextWagon();
         }
-        result.append(String.format(" with %d wagons and %d seats from %s to %s", numberOfWagons, getNumberOfSeats(), origin, destination));
+        result.append(String.format(" with %d wagons and %d seats from %s to %s", this.numberOfWagons, getNumberOfSeats(), this.origin, this.destination));
         return result.toString();
     }
 
     @Override
     public Iterator<Train> iterator() {
-        return new TrainIterator<Train>(trainList);
+        return new TrainIterator<Train>(this.trainList);
     }
 }
 

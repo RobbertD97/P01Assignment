@@ -36,6 +36,7 @@ public class TrainsTest {
         for (Wagon w : pwList) {
             Shunter.hookWagonOnTrainRear(firstPassengerTrain, w);
         }
+
         secondPassengerTrain = new Train(gordon, "Joburg", "Cape Town");
     }
 

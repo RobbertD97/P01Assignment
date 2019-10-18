@@ -36,7 +36,7 @@ public class Wagon {
     }
 
     public Wagon getPreviousWagon() {
-        return previousWagon;
+        return this.previousWagon;
     }
 
     public void setPreviousWagon(Wagon previousWagon) {
@@ -44,11 +44,11 @@ public class Wagon {
     }
 
     public Wagon getNextWagon() {
-        return nextWagon;
+        return this.nextWagon;
     }
 
     public int getWagonId() {
-        return wagonId;
+        return this.wagonId;
     }
 
     public int getNumberOfWagonsAttached() {
@@ -63,15 +63,15 @@ public class Wagon {
     }
 
     public boolean hasNextWagon() {
-        return !(nextWagon == null);
+        return this.nextWagon != null;
     }
 
     public boolean hasPreviousWagon() {
-        return !(previousWagon == null);
+        return this.previousWagon != null;
     }
 
     @Override
     public String toString() {
-        return String.format("[Wagon %d]", wagonId);
+        return String.format("[Wagon %d]", this.wagonId);
     }
 }
